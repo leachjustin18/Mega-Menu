@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>Mega Menu</title>
+
+   <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+	<body>
+
+		<style>
+		ul, li {
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+
+
+#nav li {
+	display: inline;
+	color: #666;
+	padding:0 25px;
+}
+
+.clearfix{
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+#nav ul, li:hover {
+	cursor: default;
+} 
+
+#wrapper {
+	width: 980px;
+	margin: 0 auto;
+	position: relative; 
+
+}
+
+.navHover {
+	color: #f17432 !important;
+}
+
+.megMenu {
+	width: 100%;
+	height: auto;
+	border-bottom: 1px solid #a2a2a2;
+	display: none;
+	float: none;
+	background-color: #ececec;
+	position: fixed;
+	color: #505050;
+	margin-top:12px;
+	left:0;
+	
+}
+
+.center {
+	width:980px;
+	margin: 0 auto;
+	
+}
+
+.megaMenuRow {
+	float: left;
+	height: auto;
+	margin: 10px 0 0 25px;
+	font-size: 13px;
+
+}
+
+.width200 {
+	width:200px;
+}
+
+
+.megaMenuRow li {
+	margin:10px 10px 0 0;
+
+}
+
+.megaMenuRow li:hover {
+	background-color: #f17432 !important;
+	color: #fff;
+
+	
+}
+
+.megaMenuTitle {
+	font-family:"Times New Roman", Times, serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 16px;
+	border-bottom: 1px solid #a2a2a2;
+
+}
+
+.menuArrow {
+	background-image: url('megaMenuArrow.gif');
+	position: absolute;
+	top: 20px;
+	border: 1px solid #fff;
+	width: 21px;
+	height: 12px;
+	display: none;
+	left: 30px;
+}
+
+.navChoice {
+	position: relative;
+}
+
+.megaMenuRow .styleCategory {
+	float:left; 
+	width:150px;
+}
+
+.sizes {
+	background-color: #ffffff;
+	padding: 4px 0;
+	width:20px;
+	font-size: 12px;
+	display: inline-block;
+	margin-right: 10px;
+	text-align: center;
+
+}
+
+.sizes:hover {
+	background-color: #f17432 ;
+	color:#ffffff;
+}
+
+.sizeRow {
+	margin-top:10px;
+}
+
+.viewAllWW {
+	margin-top:20px;
+}
+
+.topBottomNavPadding {
+	padding:10px 0 0 0;
+}
+
+#navArrow {
+	position: absolute;
+	top:30px;
+	display: none;
+}
+		</style>
+		<div id="wrapper">
+
+		
+		<ul id="nav">
+		    <li class="navChoice" id="women" value="0">women</li>
+		    <li class="navChoice" id="men" value="1">men</li>
+		    <li class="navChoice" id="girls" value="2">girls </li>
+		    <li class="navChoice" id="boys" value="3">boys</li>
+		    <li class="navChoice" id="acc" value="4">accessories</li>
+		    <li class="navChoice" id="sale" value="5">sale</li>
+		</ul>
+
+		<div id="navArrow" >
+			<img src="megaMenuArrow.gif" alt="" />
+		</div>
+
+		<div id="mm-women" class="megMenu"> 
+			<div class="topBottomNavPadding"> </div>
+			<div class="center"> 
+			<div class="megaMenuRow width200"> 
+				<div class="megaMenuTitle">Trend</div>
+				<ul>
+				    
+				    <li>New Arrivals</li>
+				    <li>Top Rated</li>
+				    <li>All Day Comfort</li>
+				    <li>Wear to work</li>
+				    <li>Prom</li>
+				    <li>Designer Collections</li>
+				    <li>Incredible Value</li>
+				</ul>
+			</div>
+
+				<div class="megaMenuRow"> 
+					<div class="megaMenuTitle">Styles</div>
+
+					<div class="styleCategory">
+						<ul>
+						    <li>View All</li>
+						    <li>Athletic</li>
+						    <li>Boots</li>
+						    <li>Dance Shoes</li>
+						    <li>Flats</li>
+						    <li>Mary Janes</li>
+						    <li>Moccasins &amp; Slip-ons</li>
+						    <li>Mules &amp; Clogs</li>
+						    </ul>
+					 </div>   
+					    
+					  <div class="styleCategory">
+					    <ul>
+					    	<li>Oxfords</li>
+						    <li>Pumps &amp; Heels</li>
+						    <li>Sandals</li>
+						    <li>Sneakers</li>
+						    <li>Special Occasion</li>
+						    <li>Wedges</li>
+						    <li>Work &amp; Safety</li>
+						    <li>Accessories</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="megaMenuRow">
+					<div class="megaMenuTitle">Sizes</div>
+					<div class="clearfix"> </div>
+					<div class="sizeRow"> 
+						<div class="sizes">5</div> 
+						<div class="sizes">5.5</div> 
+						<div class="sizes">6</div>
+						<div class="sizes">6.5</div>
+						<div class="sizes">7</div>   
+					</div>
+					
+					
+					<div class="sizeRow"> 
+						<div class="sizes">7.5</div> 
+						<div class="sizes">8</div> 
+						<div class="sizes">8.5</div>
+						<div class="sizes">9</div> 
+						<div class="sizes">9.5</div>  
+					</div>
+
+					
+					<div class="sizeRow"> 
+						<div class="sizes">10</div> 
+						<div class="sizes">11</div> 
+						<div class="sizes">12</div>
+						<div class="sizes">13</div> 
+					</div>
+
+					
+					<div class="viewAllWW">
+						View All Wide Width
+					 </div>
+					
+				</div>	
+
+				<div class="megaMenuRow"> 
+					<img src="summerSale.png" alt="Summer Sandal Sale" />
+				</div>
+			
+			</div>
+				<div class="clearfix"> </div>
+				<div class="topBottomNavPadding"> </div>
+			</div>
+
+		<div id="mm-men" class="megMenu"> 
+			<div class="topBottomNavPadding"> </div>
+			<div class="center"> 
+			<div class="megaMenuRow width200" > 
+				<div class="megaMenuTitle"> Trend</div>
+				<ul>
+				    <li>New Arrivals</li>
+				    <li>Incredible Value</li>
+				</ul>
+			</div>
+
+			
+				<div class="megaMenuRow"> 
+					<div class="megaMenuTitle">Styles</div>
+						<div class="styleCategory"> 
+							<ul>
+							    <li>View All</li>
+							    <li>Casuals</li>
+							    <li>Athletic &amp; Outdoors</li>
+							    <li>Boots</li>
+							    <li>Boat Shoes</li>
+							    <li>Dress</li>
+							    <li>Loafers &amp; Slip-ons</li>
+							    <li>Oxfords &amp; Lace-ups</li>
+							</ul>
+						</div>
+						
+						<div class="styleCategory"> 
+						    <ul>
+							    <li>Sandals &amp; Flip Flops</li>
+							    <li>Skate Shoes</li>
+							    <li>Slippers</li>
+							    <li>Work &amp; Safety</li>
+							    <li>Shoe Care</li>
+							    <li>Socks</li>
+							     <li>Accessories</li>
+							</ul>    
+						</div>	
+				</div>
+
+				<div class="megaMenuRow">
+					<div class="megaMenuTitle">Sizes</div>
+					<div class="clearfix"> </div>
+					<div class="sizeRow"> 
+						<div class="sizes">5</div> 
+						<div class="sizes">5.5</div> 
+						<div class="sizes">6</div>
+						<div class="sizes">6.5</div>
+						<div class="sizes">7</div>   
+					</div>
+					
+					
+					<div class="sizeRow"> 
+						<div class="sizes">7.5</div> 
+						<div class="sizes">8</div> 
+						<div class="sizes">8.5</div>
+						<div class="sizes">9</div> 
+						<div class="sizes">9.5</div>  
+					</div>
+
+					
+					<div class="sizeRow"> 
+						<div class="sizes">10</div> 
+						<div class="sizes">11</div> 
+						<div class="sizes">12</div>
+						<div class="sizes">13</div> 
+					</div>
+
+					
+					<div class="viewAllWW">
+						View All Wide Width
+					 </div>
+					
+				</div>	
+
+				<div class="megaMenuRow"> 
+					<img src="summerSale.png" alt="Summer Sandal Sale" />
+				</div>
+			</div>	
+
+				<div class="clearfix"> </div>
+				<div class="topBottomNavPadding"> </div>
+		</div>
+
+		<div id="mm-girls" class="megMenu"> 
+			<div class="topBottomNavPadding"> </div>
+			<div class="center"> 
+			<div class="megaMenuRow width200"> 
+				<div class="megaMenuTitle"> Trend</div>
+					<ul>					 
+					    <li>New Arrivals</li>
+					    <li>Cool Canvas</li>
+					    <li>Uniform Shop</li>
+					    <li>Incredible Value</li>
+					</ul>
+			</div>
+
+			
+				<div class="megaMenuRow"> 
+					<div class="megaMenuTitle">Styles</div>
+						
+					<div class="styleCategory"> 	
+						<ul>
+						    <li>View All</li>
+						    <li>Infant (size 1-4)</li>
+						    <li>Toddler (size 5 - 10)</li>
+						    <li>Youth (size 10.5 - 6)</li>
+						    <li>Athletic</li>
+						    <li>Boots</li>
+						    <li>Character</li>
+						    <li>Dance</li>
+						    <li>Dress</li>
+
+						</ul>
+					</div>
+
+					<div class="styleCategory"> 
+						<ul>
+							 <li>Flats</li>
+						    <li>Mary Janes &amp; T-Straps</li>
+						    <li>Oxfords</li>
+						    <li>Sandals</li>
+						    <li>Slip-ons &amp; Moccasins</li>
+						    <li>Slippers</li>
+						    <li>Sneakers</li>
+						    <li>Dance Bags</li>
+						    <li>Accessories</li>
+						</ul>
+
+					</div>	
+				</div>
+
+				<div class="megaMenuRow">
+					<div class="megaMenuTitle">Sizes</div>
+					<div class="clearfix"> </div>
+					<div class="sizeRow"> 
+						<div class="sizes">5</div> 
+						<div class="sizes">5.5</div> 
+						<div class="sizes">6</div>
+						<div class="sizes">6.5</div>
+						<div class="sizes">7</div>   
+					</div>
+					
+					
+					<div class="sizeRow"> 
+						<div class="sizes">7.5</div> 
+						<div class="sizes">8</div> 
+						<div class="sizes">8.5</div>
+						<div class="sizes">9</div> 
+						<div class="sizes">9.5</div>  
+					</div>
+
+					
+					<div class="sizeRow"> 
+						<div class="sizes">10</div> 
+						<div class="sizes">11</div> 
+						<div class="sizes">12</div>
+						<div class="sizes">13</div> 
+					</div>
+
+					
+					<div class="viewAllWW">
+						View All Wide Width
+					 </div>
+					
+				</div>	
+
+				<div class="megaMenuRow"> 
+					<img src="summerSale.png" alt="Summer Sandal Sale" />
+				</div>
+			</div>
+
+				<div class="clearfix"> </div>
+				<div class="topBottomNavPadding"> </div>
+			</div>	
+
+		
+
+		<div id="mm-boys" class="megMenu">
+			<div class="topBottomNavPadding"> </div> 
+			<div class="center"> 
+			<div class="megaMenuRow width200"> 
+				<div class="megaMenuTitle">Trend</div>
+				<ul>
+				    
+				    <li>New Arrivals</li>
+				    <li>Cool Canvas</li>
+				    <li>Uniform Shop</li>
+				    <li>Incredible Value</li>
+				    
+				</ul>
+			</div>
+
+			
+				<div class="megaMenuRow"> 
+					<div class="megaMenuTitle">Styles</div>
+
+					<div class="styleCategory"> 	
+						<ul>
+						    <li>View All</li>
+						    <li>Infant (size 1-4)</li>
+						    <li>Toddler (size 5 - 10)</li>
+						    <li>Youth (size 10.5 - 6)</li>
+						    <li>Athletic &amp; Outdoors</li>
+						    <li>Basketball</li>
+						    <li>Boots</li>
+						    <li>Casual Shoes</li>
+						    <li>Character</li> 
+						</ul>
+					</div>
+
+					<div class="styleCategory"> 
+						<ul>
+							<li>Dress Shoes</li>
+						    <li>Sandals</li>
+						    <li>Slippers</li>
+						    <li>Sneakers</li>
+						    <li>Hats</li>
+						    <li>Socks</li>
+						    <li>Sunglasses</li>
+						    <li>Umbrellas</li>
+						    <li>Accessories</li>
+						</ul>
+					</div>
+
+				</div>
+
+					<div class="megaMenuRow">
+						<div class="megaMenuTitle">Sizes</div>
+						<div class="clearfix"> </div>
+						<div class="sizeRow"> 
+							<div class="sizes">5</div> 
+							<div class="sizes">5.5</div> 
+							<div class="sizes">6</div>
+							<div class="sizes">6.5</div>
+							<div class="sizes">7</div>   
+						</div>
+					
+					
+					<div class="sizeRow"> 
+						<div class="sizes">7.5</div> 
+						<div class="sizes">8</div> 
+						<div class="sizes">8.5</div>
+						<div class="sizes">9</div> 
+						<div class="sizes">9.5</div>  
+					</div>
+
+					
+					<div class="sizeRow"> 
+						<div class="sizes">10</div> 
+						<div class="sizes">11</div> 
+						<div class="sizes">12</div>
+						<div class="sizes">13</div> 
+					</div>
+
+					
+					<div class="viewAllWW">
+						View All Wide Width
+					 </div>
+					
+				</div>	
+
+				<div class="megaMenuRow"> 
+					<img src="summerSale.png" alt="Summer Sandal Sale" />
+				</div>
+			</div>
+			
+				<div class="clearfix"> </div>
+				<div class="topBottomNavPadding"> </div>
+			</div>
+
+
+
+		</div>
+
+	<script src="http://code.jquery.com/jquery-1.5.1.min.js"></script>
+	<script type="text/javascript" charset="utf-8" async>
+	$(document).ready(function() {
+		
+		var $sel = {
+			megaMenu: $('.megMenu'), 
+			navagationChoice: $('.navChoice'), 
+			navagationArrow: $('#navArrow')
+		}
+
+		var timer, 
+			navChoice, 
+			hoveringNav, 
+			arrowLocations, 
+			positonArrowLeft;
+
+			//Array used to position the arrow under nav 
+			arrowLocations = [40, 132, 211, 295]; 
+
+		//Hover over one of the menu options
+		$sel.navagationChoice.hover(function(){
+			$sel.navagationArrow.hide();
+			
+			navChoice = this.id;
+
+			$sel.navagationChoice.each(function(){
+				$(this).removeClass('navHover');
+			});
+
+			$(this).addClass('navHover');
+
+
+		   	$sel.megaMenu.hide();
+		   	//Clear the time out so it doesn't close the megamenu
+		    clearTimeout(timer);
+
+		    setTimeout(function() {
+			    	$('#' + navChoice).clearQueue();
+
+					$('#mm-' + navChoice).stop(true, true).slideDown(500, function(){
+						
+						moveArrowIntoPlaceAndSlideUp();				
+							
+					});
+			}, 300);
+
+		}, function(){
+			//Afer hover function allows hovering from megaMenu to nav
+			afterHover();
+
+		});
+
+		//Hover over the megaMenu 
+		$sel.megaMenu.hover(function(){
+			//Clear the time out so it doesn't close the megamenu
+			 clearTimeout(timer);
+
+			}, function(){
+				//Afer hover function allows hovering from megaMenu to nav
+				afterHover();
+		});	
+
+		function afterHover(){
+			//Set a timeout function to allow hovering from the nav to the megamenu
+			timer = setTimeout(function() {
+        		$sel.megaMenu.slideUp(100, function(){
+        			$sel.navagationChoice.removeClass('navHover');
+
+        			$sel.navagationArrow.hide();
+        		});
+    		}, 800);
+		}
+
+		//function to position and move arrow up
+		function moveArrowIntoPlaceAndSlideUp() {
+				hoveringNav = parseInt($('#' + navChoice).attr('value'));
+				positonArrowLeft = arrowLocations[hoveringNav];
+
+			    $sel.navagationArrow.show();
+
+				$sel.navagationArrow.css({
+					left: positonArrowLeft, 
+					top: 30
+				});
+
+				$sel.navagationArrow.clearQueue();
+
+				$sel.navagationArrow.stop(true, true).animate({
+					top: 15
+				});
+		}
+
+	});	
+
+
+
+	</script>
+
+	</body>
+</html>
