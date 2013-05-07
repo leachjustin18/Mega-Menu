@@ -53,6 +53,7 @@ ul, li {
 	color: #505050;
 	margin-top:12px;
 	left:0;
+	z-index: 10;
 	
 }
 
